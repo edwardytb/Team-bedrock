@@ -1,0 +1,80 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+body{
+     
+     font-family: Arial, Helvetica, sans-serif;
+     background: linear-gradient(150deg, #141e30, #243b55);
+     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+#container{
+    width: 10%;
+    margin: 0px auto;
+    border: 1px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    border-bottom: 2px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+nav{
+    height: 48px;
+    border-bottom: 2px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: calc(101% - 101px);
+    min-width: 92.5%;
+    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.article{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px dashed white;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+} 
+
+.article:first-child{
+    padding-top: 10px;
+    padding-top: 2px solid #A6A5A5;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+aside{
+    float:right;
+    width: calc(101% - 101%);
+    min-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}

@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+     
+     font-family: Arial, Helvetica, sans-serif;
+     background: linear-gradient(150deg, #141e30, #243b55);
+}
+
+#container{
+    width: 10%;
+    margin: 0px auto;
+    border: 1px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    border-bottom: 2px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+nav{
+    height: 20px;
+    border-bottom: 2px solid black;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 10px;
+    line-height: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.clearfix{
+    clear: both;
+}
+
+#content{
+    float: left;
+    width: calc(101% - 101px);
+    min-width: 92.5%;
+    padding: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+.article{
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 3px dashed white;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+} 
+
+.article:first-child{
+    padding-top: 10px;
+    padding-top: 2px solid #A6A5A5;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+aside{
+    float:right;
+    width: calc(101% - 101%);
+    min-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+#hr{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+#hr1{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+#hr2{
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+}
+
+/*boton de reportar problema*/
+/* From uiverse.io by @adamgiebl */
+button {
+ font-family: inherit;
+ font-size: 20px;
+ background: royalblue;
+ color: white;
+ padding: 0.7em 1em;
+ padding-left: 0.9em;
+ display: flex;
+ align-items: center;
+ border: none;
+ border-radius: 16px;
+ overflow: hidden;
+ transition: all 0.2s;
+}
+
+button span {
+ display: block;
+ margin-left: 0.3em;
+ transition: all 0.3s ease-in-out;
+}
+
+button svg {
+ display: block;
+ transform-origin: center center;
+ transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+ animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+ transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+ transform: translateX(5em);
+}
+
+button:active {
+ transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+ from {
+  transform: translateY(0.1em);
+ }
+
+ to {
+  transform: translateY(-0.1em);
+ }
+}
